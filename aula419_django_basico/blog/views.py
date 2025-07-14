@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def blog(request):
-    print('blog com render')
+    print('blog com template')
     return render(request, 'blog/blog.html')
 
 def exemplo(request):
