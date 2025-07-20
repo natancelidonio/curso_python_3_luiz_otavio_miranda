@@ -4,7 +4,7 @@ def home(request):
     print('home com render')
     context = {
         'text': 'Estamos na home, my brother!',
-        'title': 'Página Inicial',
+        'head_title': 'Página Inicial',
     }
     return render(
         request,
