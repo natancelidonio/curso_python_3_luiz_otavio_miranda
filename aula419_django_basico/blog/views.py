@@ -1,10 +1,13 @@
 from django.shortcuts import render
+from blog.data import posts
+
 
 def blog(request):
     print('blog com template')
     context = {
         'text': 'Estamos no blog.',
         'title': 'Página do blog',
+        'posts': posts,
     }
     return render(request, 'blog/blog.html', context)
 
