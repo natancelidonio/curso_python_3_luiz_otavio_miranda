@@ -18,3 +18,10 @@ def exemplo(request):
         'head_title': 'Página de exemplo',
     }
     return render(request, 'blog/exemplo.html', context)
+
+def post(request, id):
+    print('posts, posts, posts...')
+    context = {
+        'head_title': 'Página do post',
+    }
+    return render(request, 'blog/exemplo.html', context)
